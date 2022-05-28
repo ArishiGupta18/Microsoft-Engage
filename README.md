@@ -8,7 +8,7 @@
 2.	Import excel data into SQL server 2014 database
 3.	Where operations like data cleaning, normalization through applying required constraints, modelling and many other.
 4.	Including additional information like month-year wise target/sales data through randomization.
-5.	Once the data is compiled, it is taken as input in a tool named Microsoft Power BI which is used for data analysis and visualization as per user requirement
+5.	Once the data is compiled, it is taken as input in a tool named Microsoft Power BI with the help of windows credentials, which is used for data analysis and visualization as per user requirement
 
 **DATA COMPILATION STEPS:**
 1.	elimination of data redundancy ( Duplicate.sql )
@@ -20,7 +20,7 @@
 
 **STEPS TO EXECUTE POWER BI FILES:**
 1.	To get the overview of the analysis performed in-memory data, just click on *.pbix file (as mentioned below) 
-2.	To see the database structure, restore this (Full backup: engage_car28) database in SQL 2014
+2.	To see the database structure, restore this (Full backup: engage_car28.zip) database in SQL 2014
 
 **Power BI**
 1) 1.pbix ; description
