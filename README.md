@@ -20,7 +20,7 @@
 
 **STEPS TO EXECUTE POWER BI FILES:**
 1.	To get the overview of the analysis performed in-memory data, just click on *.pbix file (as mentioned below) 
-2.	To see the database structure, restore this (Full backup: engage_car28) database in SQL 2014
+2.	To see the database structure, restore this (Full backup: engage_car28.zip) database in SQL 2014
 
 **Power BI**
 1) 1.pbix ; description
