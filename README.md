@@ -8,7 +8,7 @@
 2.	Import excel data into SQL server 2014 database
 3.	Where operations like data cleaning, normalization through applying required constraints, modelling and many other.
 4.	Including additional information like month-year wise target/sales data through randomization.
-5.	Once the data is compiled, it is taken as input in a tool named Microsoft Power BI which is used for data analysis and visualization as per user requirement
+5.	Once the data is compiled, it is taken as input in a tool named Microsoft Power BI with the help of windows credentials, which is used for data analysis and visualization as per user requirement
 
 **DATA COMPILATION STEPS:**
 1.	elimination of data redundancy ( Duplicate.sql )
