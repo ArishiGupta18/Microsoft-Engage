@@ -2,9 +2,9 @@
 
 **STEPS FOLLOWED:**
 1.	Analysed the attributes of the given data set and finalized the requirements 
-    •	Target vs sale analysis
-    •	Insights of sale data
-    •	Model selection from security point of view
+    - Target vs sale analysis
+    - Insights of sale data
+    - Model selection from security point of view
 2.	Import excel data into SQL server 2014 database
 3.	Where operations like data cleaning, normalization through applying required constraints, modelling and many other.
 4.	Including additional information like month-year wise target/sales data through randomization.
