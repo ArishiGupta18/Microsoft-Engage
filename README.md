@@ -12,8 +12,8 @@
 5.	Once the data is compiled, it is taken as input in a tool named Microsoft Power BI with the help of windows credentials, which is used for data analysis and visualization as per user requirement
 
 ## **DATA COMPILATION STEPS:**
-1.	elimination of data redundancy ( 1.SQL_DataCleaning.sql )
-2.	applying proper constraints like ex-showroom price should be int, city_Mileage in decimal (18,2) also the null columns were analysed and proper steps were taken and so on. For that, necessary steps were carried out (2.SQL_DeleteDuplicateRecords.sql )
+1.	Elimination of data redundancy ( 1.SQL_DataCleaning.sql )
+2.	Applying proper constraints like ex-showroom price should be int, city_Mileage in decimal (18,2) also the null columns were analysed and proper steps were taken and so on. For that, necessary steps were carried out (2.SQL_DeleteDuplicateRecords.sql )
 3. 	Preparation of target/sales data (3.SQL_CreatingSalesDataTable.sql , 4.SQL_LogicToUpdate_Target_Sale_Data.sql )
 4.	Primary key, foreign key constrains were applied to increase the data efficiency (through sql enterprise database diagram)
 5.	Concept of ranking/scaling were introduced based on some special security features (5_SQL_Ranking.sql)
@@ -46,4 +46,5 @@ https://drive.google.com/drive/folders/1d0Cx6Fah5vOthcfhbMeumKv7wE2eAbzs
 
 Demo Video Link:
 https://drive.google.com/drive/folders/1D478xVuq0Tuj_8ysjP9hreO6MClJuCON
+Please download and watch the video for better display quality
 
