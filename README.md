@@ -41,4 +41,9 @@
      
 ![image](https://user-images.githubusercontent.com/85198302/170871583-9eeeaab7-5902-4ac6-9d9b-17767eddec91.png)
 
+PPT Link:
+https://drive.google.com/drive/folders/1d0Cx6Fah5vOthcfhbMeumKv7wE2eAbzs
+
+Demo Video Link:
+https://drive.google.com/drive/folders/1D478xVuq0Tuj_8ysjP9hreO6MClJuCON
 
