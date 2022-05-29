@@ -24,8 +24,10 @@
 
 ## **Power BI File Description**
 1. Rank_powerBI.pbix : One can find the best model based on Security Parameters. This security ranking calculation is based on 7 security parameters. Assigning each variant with new number that gives the measurement of security aspects and high number indicate high security
+![image](https://user-images.githubusercontent.com/85198302/170871666-d23eaf88-7789-4bad-a5c1-c345b83f2900.png)
 
 2. YearlySales(in %)byMakeModelVariant.pbix : This gives the visualation of Sales ( year wise , month wise ) wrt the assigned Target and many more dynamic input parameter are also the choice of users.
+![image](https://user-images.githubusercontent.com/85198302/170871636-cd1bd4f4-c4e6-4bf3-bee8-5bee8f2deadf.png)
 
 3. DataAnalysisWithDynamicFilter.pbix : In this model we have analysed the data set based on make, model, variant, price range, no. of airbags, handbrake, rainsensing wipers etc., in this we can add features as per our requirement and obtain the analysis accordingly.
-
+![image](https://user-images.githubusercontent.com/85198302/170871583-9eeeaab7-5902-4ac6-9d9b-17767eddec91.png)
