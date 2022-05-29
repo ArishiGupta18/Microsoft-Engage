@@ -1,5 +1,13 @@
 ﻿-- Import Excel Data in Sql Server Table ie carsData
+
 -- Create New Coulmn ID as an identity column
+
+
+	IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='ID')
+	BEGIN
+	Alter Table [carsData] Add ID Int Identity(1, 1) 
+	END 
+
 --## DATA CLEANING ##
 --*****some columns have make as null so for making the data set more efficient those null values have been modified *****
   IF exists (select ID  from [dbo].[carsData] where Model like '%Mercedes%' and make is null)
@@ -86,3 +94,11 @@ type to some numeric data type for comparing them so for that we have performed 
 
  update [carsData]  set [City_Mileage] = replace([City_Mileage],',','.') where [City_Mileage] like '%,%'
  update  [carsData] set [City_Mileage] ='12.6'  where [City_Mileage] ='12.5-12.7' 
+
+ ALTER TABLE [CarsData] ALTER COLUMN [City_Mileage]		 DECIMAL(18,10) NULL
+ ALTER TABLE [CarsData] ALTER COLUMN [Ex-Showroom_Price] INT NULL
+ ALTER TABLE [CarsData] ALTER COLUMN [Fuel_Tank_Capacity] INT NULL
+ ALTER TABLE [CarsData] ALTER COLUMN [BOOT_SPACE]  INT NULL
+
+
+

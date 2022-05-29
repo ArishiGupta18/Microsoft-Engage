@@ -1,6 +1,6 @@
-***Microsoft Engage*** 
+# ***Microsoft Engage*** 
 
-**STEPS FOLLOWED:**
+## **STEPS FOLLOWED:**
 1.	Analysed the attributes of the given data set and finalized the requirements 
     - Target vs sale analysis
     - Insights of sale data
@@ -10,20 +10,22 @@
 4.	Including additional information like month-year wise target/sales data through randomization.
 5.	Once the data is compiled, it is taken as input in a tool named Microsoft Power BI with the help of windows credentials, which is used for data analysis and visualization as per user requirement
 
-**DATA COMPILATION STEPS:**
-1.	elimination of data redundancy ( Duplicate.sql )
-2.	applying proper constraints like ex-showroom price should be int, city_Mileage in decimal (18,2) also the null columns were analysed and proper steps were taken and so on. For that, necessary steps were carried out (Cleaning.sql)
-3.	Primary key, foreign key constrains were applied to increase the data efficiency (through sql enterprise database diagram)
-4.	Concept of ranking/scaling were introduced based on some special security features (Ranking.sql)
-*Tried to set percentile of various attributes different in nature but couldn’t complete due to exams and lack of time.*
-5.	Preparation of target/sales data (salesDataTable.sql)
+## **DATA COMPILATION STEPS:**
+1.	elimination of data redundancy ( 1.SQL_DataCleaning.sql )
+2.	applying proper constraints like ex-showroom price should be int, city_Mileage in decimal (18,2) also the null columns were analysed and proper steps were taken and so on. For that, necessary steps were carried out (2.SQL_DeleteDuplicateRecords.sql )
+3. 	Preparation of target/sales data (3.SQL_CreatingSalesDataTable.sql , 4.SQL_LogicToUpdate_Target_Sale_Data.sql )
+4.	Primary key, foreign key constrains were applied to increase the data efficiency (through sql enterprise database diagram)
+5.	Concept of ranking/scaling were introduced based on some special security features (5_SQL_Ranking.sql)
+> **Tried to set percentile of various attributes different in nature but couldn’t complete due to exams and lack of time.**
 
-**STEPS TO EXECUTE POWER BI FILES:**
+ ## **STEPS TO EXECUTE POWER BI FILES:**
 1.	To get the overview of the analysis performed in-memory data, just click on *.pbix file (as mentioned below) 
-2.	To see the database structure, restore this (Full backup: engage_car28.zip) database in SQL 2014
+2.	To see the database structure, restore this (Full backup: CarEnageDataBaseBackUp.zip ) database in SQL 2014
 
-**Power BI**
-1) 1.pbix ; description
-2) 2.pbix ;
-3) 3.pbix......
+## **Power BI File Description**
+1. Rank_powerBI.pbix : One can find the best model based on Security Parameters. This security ranking calculation is based on 7 security parameters. Assigning each variant with new number that gives the measurement of security aspects and high number indicate high security
+
+2. YearlySales(in %)byMakeModelVariant.pbix : This gives the visualation of Sales ( year wise , month wise ) wrt the assigned Target and many more dynamic input parameter are also the choice of users.
+
+3. DataAnalysisWithDynamicFilter.pbix : In this model we have analysed the data set based on make, model, variant, price range, no. of airbags, handbrake, rainsensing wipers etc., in this we can add features as per our requirement and obtain the analysis accordingly.
 

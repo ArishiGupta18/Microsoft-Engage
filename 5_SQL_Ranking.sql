@@ -1,3 +1,43 @@
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Navigation_SystemRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Navigation_SystemRank] int NOT NULL DEFAULT(1)
+END 
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='ABS_Rank')
+BEGIN
+ALTER TABLE [carsData] ADD [ABS_Rank] tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Fasten_Seat_Belt_WarningRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Fasten_Seat_Belt_WarningRank] tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Passenger_Side_Seat-Belt_ReminderRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Passenger_Side_Seat-Belt_ReminderRank] tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='High_Speed_Alert_SystemRank')
+BEGIN
+ALTER TABLE [carsData] ADD [High_Speed_Alert_SystemRank] tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Central_LockingRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Central_LockingRank] tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Child_Safety_LocksRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Child_Safety_LocksRank] tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Engine_Malfunction_LightRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Engine_Malfunction_LightRank]  tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Low_Fuel_WarningRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Low_Fuel_WarningRank]  tinyint null
+END
+IF NOT EXISTS (SELECT * FROM syscolumns  WHERE ID=OBJECT_ID('[carsData]') AND NAME='Engine_ImmobilizerRank')
+BEGIN
+ALTER TABLE [carsData] ADD [Engine_ImmobilizerRank] tinyint null
+END
 
 UPDATE carsData set 
 [Navigation_SystemRank]					= case when Navigation_System ='Y' then 1 else 0 end,
@@ -10,8 +50,6 @@ Child_Safety_LocksRank					= case when Child_Safety_Locks ='Y' then 1 else 0 end
 Engine_Malfunction_LightRank			= case when Engine_Malfunction_Light ='Y' then 1 else 0 end,
 Low_Fuel_WarningRank					= case when Low_Fuel_Warning ='Y' then 1 else 0 end,
 Engine_ImmobilizerRank					 = case when Engine_Immobilizer ='Y' then 1 else 0 end
-
-
 
 TRUNCATE TABLE MstCarData
 --INSERT INTO #tblRank ( ID,MAKE ,MODEL,VARIANT,fuel_tank_capacity ,[Ex-Showroom_Price] ,city_Mileage ,BOOT_SPACE, [ABS_(Anti-lock_Braking_System)], 

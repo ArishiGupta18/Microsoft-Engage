@@ -9,7 +9,7 @@ BEGIN
 		--select * from SalesDataTable
 		update  SalesDataTable set Units_Sold= (checksum(NewId()) % 20)
 		update  SalesDataTable set Units_Sold= Target_Units+(Units_Sold*.01)*Target_Units --, Units_Sold=abs(checksum(NewId()) % 99)+1
-
+		update  SalesDataTable set PerAge = (Units_Sold - Target_Units)*100/Target_Units
 
 		--select (Units_Sold*.01) * Target_Units from SalesDataTable where Target_Units >Units_Sold
 		--select * from SalesDataTable where Target_Units <Units_Sold
