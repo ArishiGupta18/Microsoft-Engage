@@ -1,4 +1,5 @@
-# ***Microsoft Engage*** 
+# **Microsoft Engage**
+######***Project: Data Analysis on Automotive Industry***
 
 ## **STEPS FOLLOWED:**
 1.	Analysed the attributes of the given data set and finalized the requirements 
@@ -16,7 +17,7 @@
 3. 	Preparation of target/sales data (3.SQL_CreatingSalesDataTable.sql , 4.SQL_LogicToUpdate_Target_Sale_Data.sql )
 4.	Primary key, foreign key constrains were applied to increase the data efficiency (through sql enterprise database diagram)
 5.	Concept of ranking/scaling were introduced based on some special security features (5_SQL_Ranking.sql)
-> **Tried to set percentile of various attributes different in nature but couldn’t complete due to exams and lack of time.**
+> ***Tried to set percentile of various attributes different in nature but couldn’t complete due to exams and lack of time.***
 
  ## **STEPS TO EXECUTE POWER BI FILES:**
 1.	To get the overview of the analysis performed in-memory data, just click on *.pbix file (as mentioned below) 
